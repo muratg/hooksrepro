@@ -290,7 +290,7 @@ var PS = {};
 (function(exports) {
   var React = require("react");
 
-  exports.useState_ = function(tuple, initialState) {
+  var useState_ = function(tuple, initialState) {
     var r = React.useState(initialState);
     var state = r[0];
     var setState = r[1];
@@ -300,6 +300,8 @@ var PS = {};
       };
     });
   };
+
+  exports.useState_ = useState_;
 
   exports.unsafeSetDisplayName = function(displayName, component) {
     component.displayName = displayName;

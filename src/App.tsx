@@ -3,7 +3,7 @@ import "./App.css";
 import CounterTS from "./CounterTS";
 
 const CounterClass = require("./counterClass").counter;
-// const CounterHooks = require("./counterHooks").mkCounter();
+const CounterHooks = require("./counterHooks").mkCounter();
 
 const App: React.FC = () => {
   return (
@@ -12,7 +12,7 @@ const App: React.FC = () => {
       <hr />
       <CounterClass />
       <hr />
-      {/* <CounterHooks /> */}
+      <CounterHooks />
     </div>
   );
 };
